@@ -1,0 +1,200 @@
+@media (min-width:687px) {
+    .container{
+        width: 600px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 700px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1000px;
+    }
+}
+
+
+body{
+    background-color: blue;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 100px 50px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+}
+@media (max-width:450px) {
+    .container{
+        width: 340px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.header{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:450px) {
+    .header h1{
+        font-size: 25px;
+    };
+    .header img{
+        width: 60px;
+    }
+}
+.addbar{
+    padding: 40px 0px 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media (max-width:450px) {
+    .addbar{
+        width: 100%;
+    }
+}
+.addbar input{
+    flex:1;
+    border-right: none;
+    height: 50px;
+    border: none;
+    background-color: #eee;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 33px;
+}
+@media (max-width:450px){
+    .addbar input{
+        height: 40px;
+        font-size: 15px;
+    }
+}
+.addbar input:focus{
+    outline: none;
+}
+.addbar button{
+    border: none;
+    color: white;
+    background: brown;
+    height: 53px;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    border-radius: 33px;
+    cursor: pointer;
+}
+@media (max-width:450px){
+    .addbar button{
+        height: 42px;
+        font-size: 13px;
+        width: 50px;
+    }
+}
+
+.addedTasks{
+    display: flex;
+    flex-direction: column;
+}
+.addedTasks .task__note{
+    position: relative;
+}
+.addedTasks .box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.addedTasks .note__bad textarea{
+    background: beige;
+    position: relative;
+    transition: 0.3s;
+    display: none;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    font-size: 20px;
+    color: brown;
+}
+.addedTasks .note__bad textarea:focus{
+    outline: none;
+}
+
+.addedTasks .info { 
+    display: flex;
+    gap: 30px;
+}
+
+
+.task{
+    display: flex;
+    align-items:center;
+    justify-self: center;
+    position: relative;
+    cursor: pointer;
+
+}
+.task img:first-child{
+    width: 34px;
+    cursor: pointer;
+}
+.task p {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    position: relative;
+}
+.task .note{
+    padding-left: 5px;
+    color: brown;
+
+}
+@media (max-width:450px){
+    .task img:first-child{
+        width: 20px;
+        padding-bottom: 4px;
+    }
+    .task p{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
+.close{
+    width: 30px;
+    align-self: center;
+    cursor: pointer;
+    position: relative;
+    right: 25px;
+}
+.close img{
+    max-width: 100%;
+}
+
+.checked p , .checked img{
+    font-weight: 100;
+    text-decoration: line-through red;
+}
+.checked p{
+    opacity: 0.5;
+
+}
+.box span {
+    align-self: center;
+    cursor: pointer;
+}
+
